@@ -14,9 +14,12 @@ count = 0
 for line in fh:
     if not line.startswith("X-DSPAM-Confidence:"):
         continue
+    # print(line)
     position = line.find("0")
     num_str = line[position:position + 6]
     num_float = float(num_str)
     total = total + num_float
     count = count + 1
+# print(total)
+# print(count)
 print("Average spam confidence:", str(total / count))
