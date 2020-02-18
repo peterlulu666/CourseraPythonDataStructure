@@ -6,6 +6,7 @@
 # From stephen.marquard@uct.ac.za Sat Jan  5 09:14:16 2008
 # Once you have accumulated the counts for each hour,
 # print out the counts, sorted by hour as shown below.
+
 # paragraph = open("mbox-short.txt")
 # hour_list = list()
 # counts = dict()
@@ -22,6 +23,7 @@
 # # Print key and value in sorted order
 # for key, value in sorted(counts.items()):
 #     print(key, value)
+
 # Open file
 paragraph = open("mbox-short.txt")
 
