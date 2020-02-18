@@ -8,7 +8,9 @@
 # Open file
 import operator
 
+# Open file
 paragraph = open("mbox-short.txt")
+# Store email in email_list
 email_list = list()
 for line in paragraph:
     if line.startswith("From "):
