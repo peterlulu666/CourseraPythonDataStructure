@@ -19,5 +19,6 @@ for line in paragraph:
             counts[hour] = 1
         else:
             counts[hour] = counts[hour] + 1
+# Print key and value in sorted order
 for key, value in sorted(counts.items()):
     print(key, value)
