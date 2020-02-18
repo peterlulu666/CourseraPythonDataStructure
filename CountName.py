@@ -19,6 +19,8 @@ def count_name_list_frequency(name_list):
     name_list = list(name_list)
     counts = dict()
     for name in name_list:
+        # We can use get() and provide a default value of zero when the key
+        # is not yet in the dictionary and then just add one
         # If name is not in counts dictionary the counts.get(name, 0) returns the default value 0
         # If name is in counts dictionary the counts.get(name, 0) return counts[name] dictionary value
         counts[name] = counts.get(name, 0) + 1
